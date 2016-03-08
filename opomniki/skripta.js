@@ -1,5 +1,24 @@
 window.addEventListener('load', function() {
 	//stran nalozena
+	
+	
+	//v primeru napake lahko kar v browserju development tools in tam v konzoli preverjam
+	
+	function izvediPrijavo() {
+		//TODO
+		
+		var uporabnik = document.querySelector("#uporabnisko_ime").value;
+		document.querySelector("#uporabnik").innerHTML = uporabnik;
+		document.querySelector(".pokrivalo").style.visibility = "hidden";
+		//alert(uporabnik);
+		
+	}
+	
+	//nastavi se listener za gumb
+	//samo ID v narekovajih ce mam tam <peijavniGumb> ... <peijavniGumb>
+	// . ce imam class s tem imenom
+	// # uporabim ker imam ID
+	document.querySelector("#prijavniGumb").addEventListener("click", izvediPrijavo);
 		
 	//Posodobi opomnike
 	var posodobiOpomnike = function() {
